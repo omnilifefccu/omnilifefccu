@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e96d0507.css",
-    "main.js": "/static/js/main.af3cc9bf.js",
+    "main.js": "/static/js/main.ba159e16.js",
     "static/js/592.f6d13942.chunk.js": "/static/js/592.f6d13942.chunk.js",
     "static/media/datacamp_video.mp4": "/static/media/datacamp_video.b43dbc2b9866d131523e.mp4",
     "static/media/virtual-reality-4995294.jpg": "/static/media/virtual-reality-4995294.cd20a1f153eb86970a6e.jpg",
@@ -10,11 +10,11 @@
     "static/media/datacamp_logo.png": "/static/media/datacamp_logo.864af943f431a92e7865.png",
     "index.html": "/index.html",
     "main.e96d0507.css.map": "/static/css/main.e96d0507.css.map",
-    "main.af3cc9bf.js.map": "/static/js/main.af3cc9bf.js.map",
+    "main.ba159e16.js.map": "/static/js/main.ba159e16.js.map",
     "592.f6d13942.chunk.js.map": "/static/js/592.f6d13942.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e96d0507.css",
-    "static/js/main.af3cc9bf.js"
+    "static/js/main.ba159e16.js"
   ]
 }
