@@ -8,16 +8,15 @@ import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  const prepath = 'omnilifeFCCU'
   return (
     <>
     <Navbar />
     <div>
       <Routes>
-        <Route path={prepath + '/'} element={<Home />} />
+        <Route path='/' element={<Home />} />
         {/*<Route path={prepath +  '/team'} element={<Team />} />
         <Route path={prepath + '/projects'} element={<Projects />} /> */}
-        <Route path={prepath + '/datacamp'} element={<Datacamp />} />
+        <Route path='/datacamp' element={<Datacamp />} />
       </Routes>
     </div>
     </>

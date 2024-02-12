@@ -11,10 +11,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const navigation = [
-        { name: 'Home', href: 'omnilifeFCCU/', current: false },
+        { name: 'Home', href: '/', current: false },
         //{ name: 'Team', href: 'omnilifeFCCU/team', current: false },
         //{ name: 'Projects', href: 'omnilifeFCCU/projects', current: false },
-        { name: 'Datacamp', href: 'omnilifeFCCU/datacamp', current: false },
+        { name: 'Datacamp', href: '/datacamp', current: false },
       ]
   return (
     <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 w-full z-50">
