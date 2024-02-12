@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e96d0507.css",
+    "main.js": "/static/js/main.20bc2e2e.js",
+    "static/js/592.f6d13942.chunk.js": "/static/js/592.f6d13942.chunk.js",
+    "static/media/datacamp_video.mp4": "/static/media/datacamp_video.b43dbc2b9866d131523e.mp4",
+    "static/media/virtual-reality-4995294.jpg": "/static/media/virtual-reality-4995294.cd20a1f153eb86970a6e.jpg",
+    "static/media/Datacamp_image.jpg": "/static/media/Datacamp_image.01b7104beae62d32c495.jpg",
+    "static/media/logo-nobg.png": "/static/media/logo-nobg.b12eed5338ba44bce1f4.png",
+    "static/media/datacamp_logo.png": "/static/media/datacamp_logo.864af943f431a92e7865.png",
+    "index.html": "/index.html",
+    "main.e96d0507.css.map": "/static/css/main.e96d0507.css.map",
+    "main.20bc2e2e.js.map": "/static/js/main.20bc2e2e.js.map",
+    "592.f6d13942.chunk.js.map": "/static/js/592.f6d13942.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e96d0507.css",
+    "static/js/main.20bc2e2e.js"
+  ]
+}
