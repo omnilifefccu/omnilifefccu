@@ -14,7 +14,7 @@ export default function Navbar() {
         { name: 'Home', href: '/', current: false },
         //{ name: 'Team', href: 'omnilifeFCCU/team', current: false },
         //{ name: 'Projects', href: 'omnilifeFCCU/projects', current: false },
-        { name: 'Datacamp', href: '/datacamp', current: false },
+        { name: 'DataCamp', href: '/datacamp', current: false },
       ]
   return (
     <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 w-full z-50">
@@ -70,7 +70,7 @@ export default function Navbar() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  href={"/omnilifefccu/#"+item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'

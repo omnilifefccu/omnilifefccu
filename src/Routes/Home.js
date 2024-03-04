@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 import aboutusImg from '../media/virtual-reality-4995294.jpg';
+import backgroundGifDesktop from '../media/DesktopBackground.gif'; // Import the desktop background GIF file
+import backgroundGifMobile from '../media/MobileBackground.gif'; // Import the mobile background GIF file
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState(backgroundGifDesktop); // Default to desktop background
+  const [showAboutUs, setShowAboutUs] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
       setScrollPosition(position);
+      setShowAboutUs(position > window.innerHeight * 0.5); // Show About Us section when scrolled halfway through viewport
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -17,19 +22,29 @@ export default function Home() {
     };
   }, []);
 
-  // Calculate opacity and scale based on scroll position
-  const opacity = Math.max(0, 1 - scrollPosition * 0.0025);
-  const scale = Math.max(0.5, 1 - scrollPosition * 0.0005);
+  // Check screen width to determine background image
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setBackgroundImage(backgroundGifMobile);
+      } else {
+        setBackgroundImage(backgroundGifDesktop);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <div className='text-white mb-20 mt-40 relative overflow-hidden'>
+    <div className="relative">
       {/* OmnilifeFCCU Section */}
       <div
-        className="fixed inset-0 flex items-center justify-center z-10 text-center"
+        className={`fixed inset-0 flex items-center justify-center z-10 text-center bg-cover bg-center h-screen overflow-hidden transition-opacity transition-transform ${showAboutUs ? 'opacity-0 scale-50' : 'opacity-100 scale-100'}`}
         style={{
-          opacity: opacity.toFixed(2), // Limit opacity to two decimal places
-          transform: `scale(${scale.toFixed(2)})`, // Limit scale to two decimal places
-          transition: 'opacity 0.1s ease-in-out, transform 0.1s ease-in-out', // Smooth transition for opacity and scale
+          backgroundImage: `url(${backgroundImage})`,
         }}
       >
         <div className='max-w-full'>
@@ -40,7 +55,7 @@ export default function Home() {
       </div>
 
       {/* About Us Section */}
-      <div className="max-w-full p-4 md:p-10 mx-4 md:mx-10 overflow-hidden bg-black text-white rounded-lg shadow-lg" style={{ marginTop: '100vh' }}>
+      <div className={`max-w-full mb-20 p-4 md:p-10 mx-4 md:mx-10 overflow-hidden bg-black text-white rounded-lg shadow-lg relative ${showAboutUs ? 'opacity-100' : 'opacity-0'}`} style={{ marginTop: '100vh', zIndex: 20, transition: 'opacity 0.5s ease-in-out' }}>
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="overflow-hidden w-full md:w-1/2">
             <img src={aboutusImg} alt="Square Image" className="object-cover w-full h-full md:h-auto" />
