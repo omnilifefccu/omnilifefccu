@@ -23,8 +23,7 @@ export default function DataCamp() {
               <h2 className="text-3xl font-bold text-white mb-5">Unraveling the Data Science Universe</h2>
               <p className="mt-2 text-m text-white-600">Discover the dynamic realm of data science through OmnilifeVR's innovative collaboration with DataCamp. As pioneers in the field, we deeply appreciate the profound impact data science has on contemporary business landscapes. Through our strategic partnership with DataCamp, a premier online learning platform dedicated to data science and analytics, we aim to revolutionize learning experiences for aspiring data scientists.</p>
               <p className="mt-2 text-m text-white-600">With our expanded licensing capabilities, every student gains unfettered access to DataCamp's rich repository of resources, ensuring a personalized and enriching educational journey. DataCamp's meticulously crafted curriculum, coupled with its interactive learning approach, serves as a bridge between theoretical concepts and real-world applications, empowering learners to translate knowledge into actionable insights.</p>
-              <a href="https://sl.datacamp.com/t/100925/sc/9b5f415d-c02e-4367-895f-9307ea62c194/NB2HI4DTHIXS653XO4XGIYLUMFRWC3LQFZRW63JPMRXW4YLUMVZQ====/GNRDSOJZGZRWMYTGMRSDEOJYMQ2DGNZXMFRGKYZTGU2TIZJTGBRGGYTEMJSGCZTB/www-datacamp-com-donates" className="inline-block px-6 py-3 mt-10 text-white bg-blue-500 hover:bg-blue-600 rounded-md transition duration-300">Visit Now</a>
-        
+              <a href="https://sl.datacamp.com/t/100925/sc/9b5f415d-c02e-4367-895f-9307ea62c194/NB2HI4DTHIXS653XO4XGIYLUMFRWC3LQFZRW63JPMRXW4YLUMVZQ====/GNRDSOJZGZRWMYTGMRSDEOJYMQ2DGNZXMFRGKYZTGU2TIZJTGBRGGYTEMJSGCZTB/www-datacamp-com-donates" className="inline-block px-6 py-3 mt-10 text-white bg-blue-500 hover:bg-blue-600 rounded-md transition duration-300">Apply Now</a>
             </div>
           </div>
         </div>
